@@ -1,0 +1,3 @@
+[submodule "sample-location"]
+	path = sample-location
+	url = https://github.com/JinChoi96/sample-location
