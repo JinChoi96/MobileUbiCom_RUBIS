@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name=".GPS_Service"/>
+        <service android:name=".Beacon_Service"/>
+
     </application>
 
 </manifest>
