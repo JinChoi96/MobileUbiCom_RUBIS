@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switchButton_gps"
+        android:text="GPS                 "
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:gravity="center"
+        android:thumb="@drawable/sw_thumb"
+        app:track="@drawable/sw_track"
+        app:showText="true"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switchButton_beacon"
+        android:text="Beacon            "
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:thumb="@drawable/sw_thumb"
+        app:track="@drawable/sw_track"
+        app:showText="true"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activate"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/btn_activate"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terminate"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/btn_terminate"/>
+    </LinearLayout>
+
+</LinearLayout>
