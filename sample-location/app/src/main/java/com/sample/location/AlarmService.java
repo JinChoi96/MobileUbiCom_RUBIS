@@ -77,7 +77,7 @@ public class AlarmService extends Service {
                     {
                         SystemClock.sleep(SLEEP_TIME_BEEP_SLOW);
                     }
-                    beepSoundAlarm();
+                    //beepSoundAlarm();
                 }
             }
         });

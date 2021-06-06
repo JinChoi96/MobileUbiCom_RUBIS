@@ -167,13 +167,13 @@ public class SplashActivity extends AppCompatActivity {
 
 //            Intent intent = new Intent(SplashActivity.this, MainActivity.class);
 //            Intent intent = new Intent(SplashActivity.this, AccidentOccurActivity.class);
-            Intent intent = new Intent(SplashActivity.this, AccidentOccurService.class);
+//            Intent intent = new Intent(SplashActivity.this, AccidentOccurService.class);
 
-            intent.putExtra("latitude", latitude);
-            intent.putExtra("longitude", longitude);
+//            intent.putExtra("latitude", latitude);
+//            intent.putExtra("longitude", longitude);
 //            startActivity(intent);
             Log.d(TAG, "start service");
-            startService(intent);
+//            startService(intent);
 //            finish();
         }
 

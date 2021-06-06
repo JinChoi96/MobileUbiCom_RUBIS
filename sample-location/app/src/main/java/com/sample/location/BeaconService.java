@@ -87,6 +87,7 @@ public class BeaconService extends Service {
                     @Override
                     public void run() {
                         lastBeacon = currentBeacon;
+                        Log.d("BeaconSize", String.valueOf(minewBeacons.size()));
                         mMinewBeacons.clear();
                         mMinewBeacons.addAll(minewBeacons);
                         if(mMinewBeacons.size() != 0)
@@ -122,6 +123,7 @@ public class BeaconService extends Service {
             public void run() {
                 while (true){
                     if(currentBeacon != null){
+                        Log.d("Beacon Value", currentBeacon.getBeaconValue(BeaconValueIndex.MinewBeaconValueIndex_RSSI).getStringValue());
                         checkBeaconState();
                     }
 
@@ -138,7 +140,9 @@ public class BeaconService extends Service {
         // compare last beacon and current beacon's rssi value
 
         // warn user if beacon is too close
-        if(currentBeacon.getBeaconValue(BeaconValueIndex.MinewBeaconValueIndex_RSSI).getIntValue() > -80){
+
+        Log.d("Beacon Value", currentBeacon.getBeaconValue(BeaconValueIndex.MinewBeaconValueIndex_RSSI).getStringValue());
+        if(currentBeacon.getBeaconValue(BeaconValueIndex.MinewBeaconValueIndex_RSSI).getIntValue() > -65){
             beaconStatus = "Close";
         }
         else{

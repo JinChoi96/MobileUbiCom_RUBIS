@@ -31,7 +31,6 @@
                 <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
             </intent-filter>
         </receiver>
-        <service android:name=".AccidentOccurService"></service>
         <service android:name=".AccidentOccurService_fore"></service>
         <service android:name=".BeaconService"></service>
         <service android:name=".AlarmService"></service>
